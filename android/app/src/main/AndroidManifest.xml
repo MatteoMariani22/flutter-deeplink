@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    // <uses-permission ... />
+
+    <application >
+        <activity ...>
+            <meta-data ... />
+
+            <meta-data
+                android:name="flutter_deeplinking_enabled"
+                android:value="true" />
+
+            <intent-filter ...>
+                <action ... />
+
+                <category ... />
+
+                <data
+                    android:host="@string/env_deep_link_host"
+                    android:pathPrefix="/"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <meta-data ... />
+
+        <provider ... >
+            <meta-data ... />
+        </provider>
+
+    </application>
+</manifest>
